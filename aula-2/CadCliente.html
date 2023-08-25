@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+</head>
+<body>
+    <form action="index.html" method="post" >
+        <fieldset style="width: 400px;">
+            <legend><h3>Cadastro de clientes</h3></legend>
+            <div style="padding: 12px;">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome..." required id="nome">
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">E-mail</label>
+                <input type="email" name="email" placeholder="seunome@exemplo.com.br">
+            </div>
+
+            <div style="padding: 12px;">
+                <label>Estado</label>
+                <select name="estado" id="">
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="SP">Paraná</option>
+                        <option value="RJ">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">Endereço</label>
+                <textarea name="endereco" id="" cols="15" rows="2"></textarea>
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">Cor do cabelo</label>
+                <input type="color" name="corCabelo">
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">Dt nascimento:</label>
+                <input type="date" name="dtNascimento">
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">Frente e verso do Cartão de crédito</label>
+                <input multiple type="file" name="documento">
+            </div>
+
+            <div style="padding: 12px;">
+                <label for="">Altura</label>
+                <input type="number" name="altura" min="0" max="3" step="0.01">
+            </div>
+
+            <div style="padding: 12px;">
+                <label>Gênero:</label>
+                <input type="radio" name="genero" value="f" id="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" value="m" id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div style="padding: 12px;">
+                <label>Mão dominante:</label>
+                <input type="checkbox" name="canhoto" value="f" id="canhoto">
+                <label for="canhoto">Canhoto</label>
+                <input type="checkbox" name="destro" value="m" id="destro">
+                <label for="destro">Destro</label>
+            </div>
+            
+            <div style="padding: 12px;">
+                <button type="reset" style="margin-bottom: 12px; margin-right: 12px;">Limpar</button>
+                <button type="submit" style="margin-bottom: 12px;">Salvar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
