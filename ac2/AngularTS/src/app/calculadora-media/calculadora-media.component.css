@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente na tela */
+  align-items: center; /* Centraliza verticalmente na tela */
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  background-color: #f0f0f0; /* Cor de fundo para visualização */
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Os componentes ficarão um ao lado do outro */
+  justify-content: center; /* Centraliza horizontalmente os elementos dentro do container */
+}
+
+.card {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* ... outras propriedades do seu card ... */
+}
