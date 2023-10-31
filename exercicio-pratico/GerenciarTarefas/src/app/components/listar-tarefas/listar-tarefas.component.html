@@ -1,6 +1,12 @@
-<ul>
+<ul class="tarefas-grid">
     <li *ngFor="let tarefa of tarefas" [ngStyle]="{ 'text-decoration': tarefa.concluida ? 'line-through' : 'none' }">
-      {{ tarefa.descricao }}
-      <button (click)="concluirTarefa(tarefa)">Concluir</button>
+      <div class="tarefa-item">
+        <div class="texto">
+            {{ tarefa.descricao }}
+        </div>
+        <div>
+            <p-button label="Concluir" [text]="true" [raised]="true" (click)="concluirTarefa(tarefa)"></p-button>
+        </div>
+      </div>
     </li>
 </ul>

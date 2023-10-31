@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Tarefa } from 'src/app/interfaces/tarefa';
+import { Tarefa } from 'src/app/interfaces/Tarefa';
 
 @Component({
   selector: 'app-listar-tarefas',

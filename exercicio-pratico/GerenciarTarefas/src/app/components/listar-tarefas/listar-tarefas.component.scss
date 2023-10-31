@@ -1,0 +1,21 @@
+.tarefas-grid {
+    list-style: none; // Remove os marcadores de lista padrão
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); // Define uma grade responsiva
+    gap: 10px; // Espaço entre os elementos
+  }
+  
+  .tarefa-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .texto {
+    margin-bottom: 10px;
+  }
