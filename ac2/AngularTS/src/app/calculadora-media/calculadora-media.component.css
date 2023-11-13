@@ -1,25 +1,21 @@
-body {
-  margin: 0;
-  padding: 0;
+.input-group {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente na tela */
-  align-items: center; /* Centraliza verticalmente na tela */
-  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
-  background-color: #f0f0f0; /* Cor de fundo para visualização */
+  margin-bottom: 10px;
 }
 
-.container {
-  display: flex;
-  flex-direction: row; /* Os componentes ficarão um ao lado do outro */
-  justify-content: center; /* Centraliza horizontalmente os elementos dentro do container */
+.input-group label {
+  margin-bottom: 5px;
 }
 
-.card {
-  border: 2px solid transparent;
-  border-radius: 10px;
-  padding: 10px;
-  width: 200px;
-  margin: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  /* ... outras propriedades do seu card ... */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
